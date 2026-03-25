@@ -8,13 +8,13 @@ grand_parent: User Guide
 
 # Profiles
 Profiles allow you to specify different tracking configurations for different times.
-You create profiles with `!profile add` eg `!profile add home`.  You can list your profiles with `!profile list`
+You create profiles with `!profile add`, e.g. `!profile add home`.  You can list your profiles with `!profile list`.
 
-Note that to change tracking switch to a particular profile (eg `!profile home`, issue `!track`, `!location` or `!area` commands and these will be set to the current profile.
+Note: to change tracking, switch to a particular profile (e.g. `!profile home`), then issue `!track`, `!location` or `!area` commands, and these will be set to the current profile.
 
 But what about automatic change based on time of day?  You can do 
 `!profile settime` _activationtimes_ - where the activationtimes are 
-days of week & times to activate - eg `mon9:15` or `weekday17:00` or 
+days of week & times to activate - e.g. `mon9:15` or `weekday17:00` or 
 `weekend09`.
 
 Every 10 minutes Poracle will check if a profile was due to activate and will set it.
@@ -106,7 +106,7 @@ Remove the city of your home.
 
 Configure any tracking that you want to do while at work. You may want to use distance filter for `!track` so that the notifications are close enough for you to act upon.
 
-You may not have time to go raiding durin lunch, so perhaps just keep it to rare Pokémon.
+You may not have time to go raiding during lunch, so perhaps just keep it to rare Pokémon.
  
 `!raid remove everything`
 
