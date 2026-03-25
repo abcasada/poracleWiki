@@ -12,7 +12,7 @@ grand_parent: User Guide
 
 ### Simple commands
 
-When you are talking to Poracle there are a few basic commands you should remember
+When you are talking to Poracle, there are a few basic commands you should remember:
 
 Command | Description
 --- | ---
@@ -31,27 +31,27 @@ issue a *!start* command to resume, but you may be asked to contact your site ad
 You will only receive notifications for things that happen within the areas you have opted in, _or_ within a certain 
 distance from a specific location you set.
 
-When you first start to use poracle, it is sensible to use the pre-defined areas
+When you first start to use Poracle, it is sensible to use the pre-defined areas.
 
 ### Tracking by areas
 
 **`!area list`** will show you a list of all the areas that are available to you.  You can add tracking in these
 areas using **`!area add`** and remove them with **`!area remove`**.  You can see the areas, and every other detail
-about your tracking using `!tracked`
+about your tracking using `!tracked`.
 
 The area command helpfully can show you the extent of an area using the `!area show` command.
 
 ### Setting your location
 
-You can set your home location and ask for notifications only within a certain distance of that. You do this by specifying !location -
+You can set your home location and ask for notifications only within a certain distance of that. You do this by specifying !location, e.g.:
 
-eg `!location 10 New Dover Road, London SW3 4SX`
+`!location 10 New Dover Road, London SW3 4SX`
 
-or find the latitude and longitude of your address in google maps and set it directly
+Or, find the latitude and longitude of your address in google maps and set it directly, e.g.
 
-eg `!location 51.279,1.080`
+`!location 51.279,1.080`
 
-Once you have specified your location you will then be able to a distance marker to any notifications by using the `d` flag - for example `!egg level5 d500` - to see things within 500m of your house
+Once you have specified your location you will then be able to a distance marker to any notifications by using the `d` flag - for example `!egg level5 d500` - to see things within 500m of your house.
 
 ### Distance guide
 
@@ -72,7 +72,7 @@ Shows the current filtering settings, followed by specifications on the location
 
 ## Pokémon
 
-There are a lot of options for filtering your alerts to get the Pokémon you want.  The [Track](track.md) page contains all the detail, this just describes the
+There are a lot of options for filtering your alerts to get the Pokémon you want.  The [Track](track.md) page contains all the detail; this just describes the
 basics.
 
 Let's deconstruct this command.
@@ -82,7 +82,7 @@ Let's deconstruct this command.
 All commands to receive Pokémon notifications start with "!track". Using "!untrack [...]", you can remove the respective commands again. 
 
 **`pikachu`**  
-This part of the command indicates which Pokémon the command refers to. It is possible to name one or more Pokémon using their Pokédex numbers or name (multiple languages are supported if your Poracle is configured for this), separated by space. You can track all Pokémon using "everything". You can track all Pokémon of a particular type - eg `!track dark` and filter Pokémon using a generation - eg `!track everything gen1` or `!track dragon gen3`.
+This part of the command indicates which Pokémon the command refers to. It is possible to name one or more Pokémon using their Pokédex numbers or name (multiple languages are supported if your Poracle is configured for this), separated by space. You can track all Pokémon using "everything". You can track all Pokémon of a particular type - e.g. `!track dark` and filter Pokémon using a generation - e.g. `!track everything gen1` or `!track dragon gen3`.
 
 **`d1000`**  
 If you do not specify a *'d' (distance) filter, then the areas you have selected using the !area command will be used to filter these alerts. If you do specify a distance, then you will be notified if a Pokémon falls within the area around your location.
@@ -96,15 +96,15 @@ Examples:
 **`!track pikachu iv100`** - sends notifications for all Pikachu with 100 IV. 
 **`!track pikachu iv0 maxiv0`** - sends notifications for all Pikachu with 0 IV.  
 **`!track pikachu miniv50 maxiv60`** - sends notifications for all Pikachu with IVs between 50% and 60%.
-**`!track pikachu iv50-60`** - same as above, but uses range notation
+**`!track pikachu iv50-60`** - same as above, but uses range notation.
 
 **Note:** IV specifications will be rounded to whole numbers. A Pokémon classified as IV98 actually has 44 of 45 possible IV points (15atk,15def,15sta), which are 97.77% mathematically. Since, IV97.77 should not be included in the IV range 98 you would be best filtering for IV97 to capture all IV98 Pokémon.
 
 Also note that `iv100` and `iv:100` are the same filter and using the colon may help process non-English language commands better.
 
-You can specify more filters (eg levels, atk, def, sta) - see [Track](track.md) for more details.
+You can specify more filters (e.g. levels, atk, def, sta) - see [Track](track.md) for more details.
 
-Additionally to the Pokémon names, Poracle also knows various names for specific forms, e.g. to look only for Alola-Pokémon. You can find an explicit list in the section [Pokémon Forms](#special-form_names).
+In addition to the Pokémon names, Poracle also knows various names for specific forms, e.g. to look only for Alola-Pokémon. You can find an explicit list in the section [Pokémon Forms](#special-form_names).
 
 You can create several entries for a single Pokémon. 
 For example, you could use two commands to receive notifications for Pokémon with maximum IV0 and Pokémon with minimum IV100. 
@@ -172,8 +172,8 @@ Use `!info items` to get an up-to-date list of available items. The table below 
 **`!quest stardust500`** - all quests with at least 500 stardust as a reward. 
 
 ### Mega Candy
-** `!quest energy`** - all quests with mega energy as a reward
-** `!quest energybulbasaur` ** - all quests with bulbasaur mega energy
+** `!quest energy`** - all quests with mega energy as a reward.
+** `!quest energybulbasaur` ** - all quests with Bulbasaur mega energy.
 
 ## Raids
 There are two different kinds of Raid notifications. You can receive notifications when Raid Eggs first appear or when a certain Raid Boss hatches. 
@@ -184,7 +184,7 @@ Consequently, you have to use *!raid*-commands to receive notifications for spec
 
 Additionally, you can set the following filters for *!raid*-commands and *!egg*-commands (most of the filters can be combined freely):
 
-**`!raid(!egg) level5`** - sends notifications for all Tier 5 Raids or Eggs (cannot be combined with a filter for specific Pokémon!) Note level 6 is for mega raids!
+**`!raid(!egg) level5`** - sends notifications for all Tier 5 Raids or Eggs (cannot be combined with a filter for specific Pokémon!) Note that level 6 is for mega raids!
 
 **`!raid(!egg) d1000`** - Raids can be filtered by location.
 
@@ -194,7 +194,7 @@ Additionally, you can set the following filters for *!raid*-commands and *!egg*-
 
 **`!raid(!egg) everything`** - sends notifications for all Raids/Eggs.
 
-**`!egg remove`** or **`!raid remove`** removes all filters for Raids and Eggs. It can also refer to single Raid Tiers and Pokémon, e.g **`!raid remove Snorlax`**.
+**`!egg remove`** or **`!raid remove`** removes all filters for Raids and Eggs. It can also refer to single Raid Tiers and Pokémon, e.g. **`!raid remove Snorlax`**.
 
 ## Rocket/Invasion
 Currently, scanning Rocket-invaded PokéStops only happens passively. This means that the PokéStops are not actively approached, just detected by the radar. At any point where a scanner is doing a job of any kind, e.g. scanning a Pokémon, it collects information about invaded Stops in the surrounding area.
@@ -235,10 +235,10 @@ Additionally, you can filter by all 16 available Pokémon types and gender.
 |mixed| Tracks invasions with an undetermined type | 
 |male| Tracks male invasions  | 
 |female| Tracks female invasions  | 
-|giovanni|Tracks for giovanni|
-|arlo|Tracks for arlo|
-|cliff|Tracks for cliff|
-|sierra|Tracks for sierra|
+|giovanni|Tracks for Giovanni|
+|arlo|Tracks for Arlo|
+|cliff|Tracks for Cliff|
+|sierra|Tracks for Sierra|
 |decoy|Tracks for decoy grunts|
 |mixed|Tracks for invasions with a mixed type |
 
@@ -246,7 +246,7 @@ Additionally, you can filter by all 16 available Pokémon types and gender.
 
 ### Lures
 
-Track when lures have been placed on pokestops
+Track when lures have been placed on PokéStops.
 
 eg: **`!lure mossy`**
 
@@ -257,7 +257,7 @@ eg: **`!lure mossy`**
 
 ### Nests
 
-If your administrator has configured it, ...
+If your administrator has configured it...
 
 ## Advanced
 
