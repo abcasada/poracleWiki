@@ -123,7 +123,7 @@ All quest commands start with **`!quest`** and can be removed again using **`!qu
 **`!quest all_pokemon`** - sends notifications for all Pokémon reward quests.
 **`!quest rare_candy`** - sends notifications for all quests with rare candy as a reward.  
 
-Use `!info items` to get an up-to-date list of avaialble items. The table below may not be up-to-date.
+Use `!info items` to get an up-to-date list of available items. The table below may not be up-to-date.
 
 | Written Command | Item Name |   
 |:-----------|:-------------|  
